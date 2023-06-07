@@ -2,6 +2,7 @@ import './App.css';
 import {Menu} from './components/Menu';
 import { Inicio } from './components/Inicio';
 import Articulos from './components/Articulos';
+import Proveedor from './components/Proveedor'
 
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
@@ -15,6 +16,7 @@ function App() {
             <Routes>
               <Route path="/inicio" element={<Inicio />} />
               <Route path="/articulos" element={<Articulos />} />
+              <Route path="/proveedores" element={<Proveedor />} />
 
               <Route path="*" element={<Navigate to="/inicio" replace />} />
             </Routes>
